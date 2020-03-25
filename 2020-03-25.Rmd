@@ -1,0 +1,18 @@
+---
+title: '2020-03-25'
+author: "melody"
+date: "2020/3/25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Atomic vector
+
+```{r}
+c("小明今年歲數是",7)
+```
+
+
