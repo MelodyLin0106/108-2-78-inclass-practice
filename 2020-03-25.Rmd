@@ -12,7 +12,110 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Atomic vector
 
 ```{r}
+c("aa","bb","cc")
+c(1,2,3)
+```
+
+```{r}
 c("小明今年歲數是",7)
 ```
 
+
+## factor
+
+```{r}
+# 10位學生的主系
+majors10_char <- c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
+
+typeof(majors10_char)
+class(majors10_char)
+```
+
+```{r}
+majors10_factor <- factor(majors10_char)
+# 或
+majors10_factor <- factor(
+  c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
+)
+
+typeof(majors10_factor)
+class(majors10_factor)
+```
+
+```{r}
+levels(majors10_factor)
+```
+
+```{r}
+majors10_char
+majors10_factor
+```
+
+
+## class/type conversion
+
+```{r}
+stringInteger <- c("1","2","-11")
+class(stringInteger) # 無法進行數值運算
+numericInteger<-as.numeric(stringInteger) #用`as.numeric()`將字串變成數字
+numericInteger+2
+```
+
+```{r}
+stringInteger <- c(1,2,-11)
+class(stringInteger) # 可以進行數值運算
+stringInteger+2
+```
+
+### exercise
+```{r}
+studentId <- c(410773002, 410773015)
+studentId <- as.character(studentId)
+class(studentId)
+```
+
+
+## Date/Time
+
+```{r}
+library(lubridate)
+```
+
+台北 2020-03-18 13:52:40
+```{r}
+tpeTime <- ymd_hms("2020-03-18 13:52:40",tz="Asia/Taipei")
+tpeTime
+class(tpeTime)
+typeof(tpeTime)
+as.double(tpeTime)
+```
+
+葡萄牙 Mar.18, 2020, 05:52:40
+```{r}
+pgTime <- mdy_hms("Mar.18, 2020, 05:52:40",tz="Europe/Lisbon")
+pgTime
+typeof(pgTime)
+as.double(pgTime)
+as.double(tpeTime)
+```
+
+```{r}
+with_tz(tpeTime, tzone="UTC")
+with_tz(pgTime, tzone="UTC")
+```
+
+```{r}
+ymd_hms("2020-03-04T06:56:29Z",tz="Asia/Taipei")
+         #在時間前後有T...Z，代表就是UTC時間
+ymd_hms("2020-03-04T06:56:29Z",tz="Europe/Lisbon")
+```
+
+```{r}
+studentTime<- c(ymd_hms("2020-03-04T06:56:29Z"),ymd_hms("2020-03-11 14:16:43",tz="Asia/Taipei"),ymd_hms("2020-03-11 14:34:33",tz="Asia/Taipei"))
+studentTime
+```
+
+```{r}
+with_tz(studentTime,tzone=Europe/Lisbon)
+```
 
