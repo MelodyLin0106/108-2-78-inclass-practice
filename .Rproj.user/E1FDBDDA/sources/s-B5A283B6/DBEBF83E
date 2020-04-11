@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586587368404.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DBEBF83E",
+    "lastKnownWriteTime" : 1586587300,
+    "last_content_update" : 1586587368404,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "195ec4fd9fdf43fc8c6db149ec6fc9cf",
+        "name" : "taipeiNightMarkets",
+        "title" : "taipeiNightMarkets"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
