@@ -1,0 +1,17 @@
+"0","# 只要1998年1月（含）以後的
+library(lubridate)
+"
+"2","
+Attaching package: ��lubridate��
+
+"
+"2","The following object is masked from ��package:base��:
+
+    date
+
+"
+"2","Warning message:
+"
+"2","In grepl(""|||"", what, fixed = TRUE) :"
+"2"," 輸入的字串 1 不適用於此語言環境
+"

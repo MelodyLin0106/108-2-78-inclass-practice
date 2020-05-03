@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588475353704.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "53B1F51A",
+    "lastKnownWriteTime" : 1588475169,
+    "last_content_update" : 1588475353704,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "436754c90db54d9ab4bdfd1972d5c64c",
+        "name" : "list_victimAges_female",
+        "title" : "list_victimAges_female"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
