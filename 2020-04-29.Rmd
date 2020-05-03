@@ -313,3 +313,31 @@ sum(list_victimAges_female$`數目`, na.rm=T)
 sum(list_victimAges_female$`數目`[pick_above30], na.rm = T)
 ```
 
+
+
+## 4.4.2 相等，屬於
+
+`==`: 等於
+`!=`: 不等於
+`==`與`!=`可使用於字串
+
+example裡誰血型B型
+```{r}
+print(example[c("name","bloodType")])
+
+pick_bloodB <- example$bloodType == "B"
+example$name[pick_bloodB]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
