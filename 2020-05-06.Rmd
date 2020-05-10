@@ -253,3 +253,7 @@ print(myRegexSlotMachine)
 str_extract(addresses,myRegexSlotMachine)
 ```
 
+
+## 4.6.3 複製次數Quantifiers:
+
+`(..|..|...)`或`[...]`只是一條reel strip, 前者是寬的（每個出象可以是多字元）後者是窄的（每個出象只是一個字元）。有時我們同樣的strip想連放很多條，可以在`(..|..|...)`或`[...]`後面加：
