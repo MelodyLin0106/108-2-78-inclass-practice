@@ -1,0 +1,8 @@
+"0","  if(!require(pkgName)){ 
+  install.packages(""pkgName"")
+}}
+"
+"2","Error: unexpected '}' in:
+""  install.packages(""pkgName"")
+}}""
+"
