@@ -1,0 +1,5 @@
+"0","# 1st toss
+count<- count+1 # 計數器加1
+"
+"2","Error: object 'count' not found
+"
